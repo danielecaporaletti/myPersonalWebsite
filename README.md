@@ -1,52 +1,30 @@
-# Il Mio Sito Internet
-<h3>Creazione del mio Sito internet contennete il Portfolio.</h3>
+<h1>Il Mio Sito Internet con portfolio</h1>
 <h3>L’obiettivo del progetto è quello di creare un’istanza su GCP che serva da Virtual Host per la mia Web Page, avvicinandosi il più possibile a una IaaC.</h3>
 <p align="center">
-<img src="https://github.com/danielecaporaletti/myPersonalWebsite/blob/master/Spiegazione/Progetto%20senza%20titolo.png" width="800px" height="430px" alt="Immagine esplicativa progetto">
+<img src="" width="666px" alt="Immagine esplicativa progetto">
 </p>
 
+<h2>Funzionamento</h2>
+<p>
+Jenkins rileva ogni cambiamento del codice nel remo master di GitHub e aggiorna la directory di hostring del mio sito web. In questo modo ho sempre un sito aggiornato ad ogni push.
+</p>
 
+<h2>Breve spiegazione</h2>
+<p>
+Utilizzo del codice Terraform per creare una istanza E2-micro-2 su GCP ed esegue uno script di avvio per configurare Apache e Jenkins. In seguito accedendo a Jenkins immetto il jenkinsfile per creare la pipeline.
+</p>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h3><strong>Terraform</strong></h3>
-Utilizzo del codice Terraform per creare una istanza E2-micro-2 su GCP ed esegue uno script di avvio per configurare Apache e Jenkins
-
-<h3><strong>Bash Script</strong></h3>
-<h3><strong>Apache</strong></h3>
-Configurazione di un Virtual Host su macchina ubuntu server 20.04
-<ol>
-  <li>creare la directory dove si inserirà la pagina web
-  <li>Concedere le autorizzazioni necessarie alla directory
-  <li>Clonare da git il repository
-  <li>Creare il file di configurazione per l’host virtuale 
-  <li>Abilitare il nuovo file dell’host virtuale (tramite a2ensite)
-  <li>Restart del servizio apache2
-<ol>
-
-<h3><strong>Jenkins</strong></h3>
-Lo script installa il servizio JEnkins sulla macchina.
-<ol>
-  <li>Accedere tramite browser all’istanza tramite la porta 8080
-  <li>configurare e registrare il primo accesso a jenkins
-<ol>
+<h2>Codice</h2>
+<h4>Terraform</h4>
+<ul>
+  <li><a href="https://raw.githubusercontent.com/danielecaporaletti/myPersonalWebsite/master/IaaC/terraform/provider.tf">provider.tf</a>
+  <li><a href="https://raw.githubusercontent.com/danielecaporaletti/myPersonalWebsite/master/IaaC/terraform/instance.tf">instance.tf</a>
+</ul>
+<h4>Jenkinsfile</h4>
+<ul>
+  <li><a href="https://raw.githubusercontent.com/danielecaporaletti/myPersonalWebsite/master/IaaC/jenkinsfile">jenkinsfile</a>
+</ul>
+<h4>Bash script</h4>
+<ul>
+  <li><a href="https://raw.githubusercontent.com/danielecaporaletti/myPersonalWebsite/master/IaaC/script.sh">script.sh</a>
+</ul>
