@@ -2,26 +2,18 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        
+        stage('Fetch the code') {
             steps {
-                echo 'Hello World'
-                sh 'pwd'
-                sh 'ls -l'
+                git branch: 'master', url: 'https://github.com/danielecaporaletti/myPersonalWebsite.git'
             }
         }
         
-        stage('Fetch') {
+        stage('Push new version') {
             steps {
-                git branch: 'main', url: 'https://github.com/danielecaporaletti/myPersonalWebsite.git'
-                sh 'ls'
+                sh 'sudo cp -r * /var/www/danielecaporaletti.it/public_html'
             }
         }
         
-        stage('okay') {
-            steps {
-                echo 'via'
-                sh '../hello.sh'
-            }
-        }
     }
 }

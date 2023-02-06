@@ -11,5 +11,5 @@ provider "google" {
     project = "mywebapp-376811"
     region = "us-east1"
     zone = "us-east1-b"
-    credentials = "./G-KEY-mywebapp.json"
+    credentials = "C:\\G-KEY-mywebapp.json"
 }
