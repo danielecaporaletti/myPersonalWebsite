@@ -11,12 +11,13 @@ Jenkins rileva ogni cambiamento del codice nel remo master di GitHub e aggiorna 
 
 <h2>Breve spiegazione</h2>
 <p>
-Utilizzo del codice Terraform per creare una istanza E2-micro-2 su GCP ed esegue uno script di avvio per configurare Apache e Jenkins. In seguito accedendo a Jenkins immetto il jenkinsfile per creare la pipeline.
+Utilizzo del codice Terraform per creare un'istanza E2-micro-2 su GCP ed esegue uno script di avvio per configurare Apache e Jenkins. In seguito accedendo a Jenkins immetto il jenkinsfile per creare la pipeline.
 </p>
 
 <h2>Codice</h2>
 <h4>Terraform</h4>
 <ul>
+Facendo riferimento alla documentazione ufficiale: <a href="https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_instance#network_interface">google_compute_instance </a>di <a href="https://registry.terraform.io/">Terraform.</a>
   <li><a href="https://raw.githubusercontent.com/danielecaporaletti/myPersonalWebsite/master/IaaC/terraform/provider.tf">provider.tf</a>
   <li><a href="https://raw.githubusercontent.com/danielecaporaletti/myPersonalWebsite/master/IaaC/terraform/instance.tf">instance.tf</a>
 </ul>
