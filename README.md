@@ -7,6 +7,28 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <h3><strong>Terraform</strong></h3>
 Utilizzo del codice Terraform per creare una istanza E2-micro-2 su GCP ed esegue uno script di avvio per configurare Apache e Jenkins
 
@@ -27,4 +49,4 @@ Lo script installa il servizio JEnkins sulla macchina.
 <ol>
   <li>Accedere tramite browser all’istanza tramite la porta 8080
   <li>configurare e registrare il primo accesso a jenkins
-
+<ol>
