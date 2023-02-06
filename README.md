@@ -1,7 +1,7 @@
 <h1>Il Mio Sito Internet con portfolio</h1>
 <h3>L’obiettivo del progetto è quello di creare un’istanza su GCP che serva da Virtual Host per la mia Web Page, avvicinandosi il più possibile a una IaaC.</h3>
 <p align="center">
-<img src="" width="666px" alt="Immagine esplicativa progetto">
+<img src="https://raw.githubusercontent.com/danielecaporaletti/myPersonalWebsite/master/readme-staff/immagine.png" width="666px" alt="Immagine esplicativa progetto">
 </p>
 
 <h2>Funzionamento</h2>
