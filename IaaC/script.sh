@@ -15,7 +15,8 @@
 #INSTALLAZIONE DI JENKINS
 echo "install Java"
 apt-get update
-apt-get install openjdk-8-jdk -y
+apt-get install openjdk-11-jre -y
+java -version
 echo "finish install java"
 echo "curl"
 curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io.key | tee /usr/share/keyrings/jenkins-keyring.asc

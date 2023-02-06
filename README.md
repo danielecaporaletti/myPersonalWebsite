@@ -16,12 +16,13 @@ Utilizzo del codice Terraform per creare un'istanza E2-micro-2 su GCP ed esegue 
 
 <h2>Codice</h2>
 <h4>Terraform</h4>
-Facendo riferimento alla documentazione ufficiale: <a href="https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_instance#network_interface">google_compute_instance </a>di <a href="https://registry.terraform.io/">Terraform.</a>
+Facendo riferimento alla documentazione ufficiale: <a href="https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_instance#network_interface">Terraform for google_compute_instance </a>
 <ul>
   <li><a href="https://raw.githubusercontent.com/danielecaporaletti/myPersonalWebsite/master/IaaC/terraform/provider.tf">provider.tf</a>
   <li><a href="https://raw.githubusercontent.com/danielecaporaletti/myPersonalWebsite/master/IaaC/terraform/instance.tf">instance.tf</a>
 </ul>
 <h4>Jenkinsfile</h4>
+L'intallazione di Jenkins è stata fatta facendo riferiemnto alla documentazione ufficiale: <a href="https://www.jenkins.io/doc/book/installing/linux/">Installing Jenkins on inux</a>
 <ul>
   <li><a href="https://raw.githubusercontent.com/danielecaporaletti/myPersonalWebsite/master/IaaC/jenkinsfile">jenkinsfile</a>
 </ul>
