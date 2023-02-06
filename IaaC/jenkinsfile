@@ -1,0 +1,27 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+                sh 'pwd'
+                sh 'ls -l'
+            }
+        }
+        
+        stage('Fetch') {
+            steps {
+                git branch: 'main', url: 'https://github.com/danielecaporaletti/myPersonalWebsite.git'
+                sh 'ls'
+            }
+        }
+        
+        stage('okay') {
+            steps {
+                echo 'via'
+                sh '../hello.sh'
+            }
+        }
+    }
+}
