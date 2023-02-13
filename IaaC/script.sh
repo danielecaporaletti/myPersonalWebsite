@@ -19,7 +19,7 @@ java -version
 curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io.key | tee /usr/share/keyrings/jenkins-keyring.asc
 echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/" | tee /etc/apt/sources.list.d/jenkins.list
 apt-get update
-apt-get install jenkins
+apt-get install jenkins -y
 
 #STATUS DEI SERVIZZI
 systemctl status apache2
